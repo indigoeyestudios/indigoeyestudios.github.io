@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>thisismywebsite</title>
+<script src="/assets/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Indie+Flower&family=Londrina+Shadow&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<style> 
+body {  background-image: url("https://i.imgur.com/ywubGhr.jpeg");
+background-color: black;
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background-repeat: repeat; 
+}
+
+.artwork{
+    background-image: url("https://i.imgur.com/pipYOef.png");
+    width:2000px;
+    height:1150px;
+    background-repeat:no-repeat;
+    transform: translate(-625px,0px);  
+}
+
+.traditionalart{
+    background-image: url("");
+    background-color: transparent;
+    width:220px;
+    height:210px;
+    background-repeat:no-repeat;
+    transition: transform 0.1s
+}
+
+.traditionalart.minus{
+    background-image: url("https://i.imgur.com/SHl9urR.png");
+    width:2000px;
+    height:1150px;
+    background-repeat:no-repeat;
+    transform: translate(-660px,-325px);  
+    top: -160px; 
+}
+
+.digitalart{
+    background-image: url("");
+    background-color: transparent;
+    width:220px;
+    height:210px;
+    background-repeat:no-repeat;
+    transition: transform 0.1s
+}
+
+.digitalart.minus{
+    background-image: url("https://i.imgur.com/SHl9urR.png");
+    width:2000px;
+    height:1150px;
+    background-repeat:no-repeat;
+    transform: translate(-985px,-325px);  
+    top: -160px; 
+}
+
+.sculptureart{
+    background-image: url("");
+    background-color: transparent;
+    width:220px;
+    height:210px;
+    background-repeat:no-repeat;
+    transition: transform 0.1s
+}
+
+.sculptureart.minus{
+    background-image: url("https://i.imgur.com/SHl9urR.png");
+    width:2000px;
+    height:1150px;
+    background-repeat:no-repeat;
+    transform: translate(-1310px,-325px);  
+    top: -160px; 
+}
+
+.collageart{
+    background-image: url("");
+    background-color: transparent;
+    width:220px;
+    height:210px;
+    background-repeat:no-repeat;
+    transition: transform 0.1s
+}
+
+.collageart.minus{
+    background-image: url("https://i.imgur.com/SHl9urR.png");
+    width:2000px;
+    height:1150px;
+    background-repeat:no-repeat;
+    transform: translate(-660px, -590px);  
+    top: -160px; 
+}
+
+.photographyart{
+    background-image: url("");
+    background-color: transparent;
+    width:220px;
+    height:210px;
+    background-repeat:no-repeat;
+    transition: transform 0.1s
+}
+
+.photographyart.minus{
+    background-image: url("https://i.imgur.com/SHl9urR.png");
+    width:2000px;
+    height:1150px;
+    background-repeat:no-repeat;
+    transform: translate(-985px, -590px);  
+    top: -160px; 
+}
+
+.poetryart{
+    background-image: url("");
+    background-color: transparent;
+    width:220px;
+    height:210px;
+    background-repeat:no-repeat;
+    transition: transform 0.1s
+}
+
+.poetryart.minus{
+    background-image: url("https://i.imgur.com/SHl9urR.png");
+    width:2000px;
+    height:1150px;
+    background-repeat:no-repeat;
+    transform: translate(-1310px, -590px);  
+    top: -160px; 
+}
+
+.links{
+    background-image: url("");
+    background-color: transparent;
+    width:720px;
+    height:70px;
+    background-repeat:no-repeat;
+      color: #3BF013;
+  padding: 10px 56px;
+  text-decoration: none;
+  font-size: 27px;
+   font-weight: bold;
+   font-family: "pacifico"; 
+}
+
+.topnav {
+  overflow: hidden;
+  font-family: "pacifico"; 
+  background-color: #000000;
+  width: 2000px;
+  height: 60px;
+  margin-left: -580px;
+  margin-top: -20px;
+}
+
+.topnav a {
+  color: #3BF013;
+  padding: 10px 56px;
+  text-decoration: none;
+  font-size: 27px;
+   font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #FFFB00;
+  color: #1F0821;
+}
+
+.topnav a.active {
+  background-color: #FF27E2;
+  color: #1F0821;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="artwork" style="position: absolute; left: 520px; top:120px;">
+</div>
+
+
+<div class="traditionalart" style="position: absolute; left: 555px; top:445px;">
+</div>
+
+
+<div class="digitalart" style="position: absolute; left: 880px; top:445px;">
+</div>
+
+<div class="sculptureart" style="position: absolute; left: 1205px; top:445px;">
+</div>
+
+<div class="collageart" style="position: absolute; left: 555px; top:710px;">
+</div>
+
+<div class="photographyart" style="position: absolute; left: 880px; top:710px;">
+</div>
+
+<div class="poetryart" style="position: absolute; left: 1205px; top:710px;">
+</div>
+
+<div class="links" style="position: absolute; left: 650px; top:960px;">
+
+ <a
+    href="https://www.mozilla.org/en-US/"
+    title="The best place to find more information about Mozilla's
+          mission and how to contribute">
+    the Mozilla homepage</a>.
+
+</div>
+
+<div class="topnav"><div style="text-align: center;">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  </div>
+</div>
+
+<script>
+
+
+$(".traditionalart").click(function(){
+ $(this).toggleClass("minus")  ; 
+})
+
+$(".digitalart").click(function(){
+ $(this).toggleClass("minus")  ; 
+})
+
+$(".sculptureart").click(function(){
+ $(this).toggleClass("minus")  ; 
+})
+
+$(".collageart").click(function(){
+ $(this).toggleClass("minus")  ; 
+})
+
+$(".photographyart").click(function(){
+ $(this).toggleClass("minus")  ; 
+})
+
+$(".poetryart").click(function(){
+ $(this).toggleClass("minus")  ; 
+})
+
+
+</script>
+
+
+</body>
+</html>
