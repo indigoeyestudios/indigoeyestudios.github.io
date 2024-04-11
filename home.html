@@ -1,0 +1,195 @@
+-
+<!DOCTYPE html>
+<html>
+<head>
+<title>cats</title>
+<script src="/assets/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Indie+Flower&family=Londrina+Shadow&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<style> 
+body {  background-image: url("https://i.imgur.com/qh9HpBb.jpeg");
+background-color: black;
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background-repeat: repeat; 
+}
+
+
+.plus{
+    background-image: url("https://i.imgur.com/mpcvXH3.png");
+    width:550px;
+    height:550px;
+    background-repeat:no-repeat;
+    transition: transform 0.1s
+}
+
+.plus.minus{
+    background-image: url("https://i.imgur.com/ykgFTwZ.png");
+    width:2000px;
+    height: 750px;
+    background-repeat:no-repeat;
+    transform: translate(-50px,0px);  
+}
+
+.plus2{
+    background-image: url("https://i.imgur.com/pesC0hg.png");
+    width:660px;
+    height:680px;
+    background-repeat:no-repeat;
+    transition: transform 0.1s
+}
+
+.plus2.minus{
+    background-image: url("https://i.imgur.com/pipYOef.png");
+    width:2000px;
+    height:1150px;
+    background-repeat:no-repeat;
+    transform: translate(-625px,0px);  
+}
+
+.plus3{
+    background-image: url("https://i.imgur.com/kRYv4yt.png");
+    width:550px;
+    height:550px;
+    background-repeat:no-repeat;
+    transition: transform 0.1s
+}
+
+.plus3.minus{
+    background-image: url("https://i.imgur.com/HZlRucH.png");
+    width:2000px;
+    height:750px;
+    background-repeat:no-repeat;
+    transform: translate(-1200px,0px);
+}
+
+.topnav {
+  overflow: hidden;
+  font-family: "pacifico"; 
+  background-color: #000000;
+  width: 2000px;
+  height: 60px;
+  margin-left: -580px;
+  margin-top: -20px;
+}
+
+.topnav a {
+  color: #3BF013;
+  padding: 10px 56px;
+  text-decoration: none;
+  font-size: 27px;
+   font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #FFFB00;
+  color: #46c8a8;
+}
+
+.topnav a.active {
+  background-color: #FF27E2;
+  color: #1F0821;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="plus" style="position: absolute; left: 10px; top: 80px;"> 
+
+
+</div>
+
+
+<div class="plus2" style="position: absolute; left: 520px; top:120px;">
+
+
+
+</div>
+
+<div class="plus3" style="position: absolute; left: 1170px; top: 80px;">
+
+
+
+
+</div>
+
+
+<div class="topnav"><div style="text-align: center;">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  </div>
+</div>
+
+<script>
+
+
+$(".plus").click(function(){
+ $(this).toggleClass("minus")  ; 
+})
+
+function onClick() {
+ document.getElementById("plus").style.transform ="scale(2,2)";
+}
+
+$(".plus2").click(function(){
+ $(this).toggleClass("minus")  ; 
+})
+
+$(".plus3").click(function(){
+ $(this).toggleClass("minus")  ; 
+})
+
+$(document).ready(function(){
+  $(".plus").click(function(){
+    $(".plus2").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $(".plus").click(function(){
+    $(".plus3").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $(".plus2").click(function(){
+    $(".plus3").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $(".plus2").click(function(){
+    $(".plus").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $(".plus3").click(function(){
+    $(".plus2").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $(".plus3").click(function(){
+    $(".plus").toggle();
+  });
+});
+</script>
+
+
+</body>
+</html>
