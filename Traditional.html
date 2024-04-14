@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Indie+Flower&family=Londrina+Shadow&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <style> 
-body {  background-image: url("https://i.imgur.com/ywubGhr.jpeg");
+body {  background-image: url("https://i.imgur.com/wummjLL.jpeg");
 background-color: black;
   font-family: helvetica, sans-serif;
   margin: 0 auto;
@@ -22,28 +22,138 @@ background-color: black;
 }
 
 .artwork{
-    background-image: url("https://i.imgur.com/ty6NSBI.png");
+    background-image: url("https://i.imgur.com/oo4ym6t.png");
     bottom: 0px; 
-    width:2000px;
-    height:790px;
+    margin-top: -20px;
+    width: 2500px; 
+    height: 1307px;
     background-repeat:no-repeat;
     transform: translate(-625px,0px);  
 }
 
-.traditionalart{
-    background-image: url("");
+
+
+h3 {color: #F07AA8;
+background-color: black; 
+border-color: #FF0088;
+border-radius: 50px; 
+margin-left: 240px;
+width: 220px;
+text-align: center;
+     border-style: inset; 
+      margin-top: 10px;
+      letter-spacing: 5px;
+      font-family: "pacifico"; 
+      font-size: 30px;
+    }
+    
+p {color: #C3F07A;
+      font-size: 15px;
+      width: 680px;
+      height: 40px;
+      border-style:  inset; 
+      border-radius: 40px; 
+      text-align: center;
+      border-color: green;
+    }    
+    
+
+
+.tradartcontainer{
+    width:1800px;
+    position: absolute;
     background-color: transparent;
-    background-repeat:no-repeat;
-    transition: transform 0.1s
+    left: 505px; 
+    top: 240px;
+}
+  
+.tradartcontainer2{
+    width:1800px;
+    position: absolute;
+    background-color: transparent;
+    left: 505px; 
+    top: 240px;
 }
 
+.tradartcontainer3{
+  width:1800px;
+    position: absolute;
 
+    background-color: transparent;
+    left: 505px; 
+    top: 240px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  width: auto;
+  padding: 5px;
+  color: #E4529B;
+  font-weight: bold;
+  border-style: inset;
+  border-color: #D5E516;
+  border-radius: 50px;
+  font-size: 30px;
+  transition: 0.6s ease;
+  user-select: none;
+  left: 175px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute; 
+  left: 510px;
+  border-radius: 50px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #00FF1B;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  font-size: 40px;
+  background-color: transparent;
+  display: inline-block;
+  padding: 10px;
+  color: #E4529B;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  color: #8EE452;
+  background-color: transparent;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 .topnav {
   overflow: hidden;
   font-family: "pacifico"; 
   background-color: #000000;
   width: 2000px;
   height: 60px;
+  margin-top: -20px; 
   margin-left: -150px;
 }
 
@@ -86,12 +196,50 @@ background-color: black;
 
 
 
-<div class="artwork" style="position: absolute; left: 550px; top:120px;">
+<div class="artwork" style="position: absolute; left: 670px; top:40px;">
 </div>
 
 
-<div class="traditionalart" style="position: absolute; left: 555px; top:445px;">
+<div class="tradartcontainer">
 
+
+<div class="mySlides fade">
+
+<h3>My Work</h3>
+  <img src="https://i.imgur.com/FZOYC12.jpeg" style="width: 35%;">
+        
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+</div></div>
+
+
+<div class="tradartcontainer2">
+<div class="mySlides fade">
+<h3>My Work</h3>
+  <img src="https://i.imgur.com/0aWacBq.jpeg" style="width: 40%;">
+        
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+</div></div>
+
+
+<div class="tradartcontainer3">
+<div class="mySlides fade">
+<h3>My Work</h3>
+  <img src="https://i.imgur.com/PBbirS3.jpeg" style="width:40%;">
+        
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<br>
+
+<div style="text-align:center; position: absolute; top: 190px; left: 780px;">
+  <span class="dot" onclick="currentSlide(1)">✰</span> 
+  <span class="dot" onclick="currentSlide(2)">✰</span> 
+  <span class="dot" onclick="currentSlide(3)">✰</span> 
 </div>
 
 <div class="topnav"><div style="text-align: center;">
@@ -104,6 +252,32 @@ background-color: black;
   </div>
 </div>
 
+ <script>
+let slideIndex = 1;
+showSlides(slideIndex);
 
-</body>
-</html>
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script> 
+
