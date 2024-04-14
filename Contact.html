@@ -48,23 +48,6 @@ body {
    text-align: center; 
     } 
 
-.email-button {
-display: inline-block;
-padding: 10px 20px;
-background-color: #007bff;
-color: #fff;
-text-decoration: none;
-border-radius: 5px;
-font-weight: bold;
-transition: background-color 0.3s ease;
-
-}
-
-
-.email-button:hover {
-background-color: #0056b3;
-}
-
   
 .topnav {
   overflow: hidden;
@@ -121,8 +104,17 @@ background-color: #0056b3;
 </div>
 
 <div class="AboutMe">YOOOOOO<br><br><br>
-<a href="mailto:palacexofxtwilight@gmail.com" class="email-button">Contact Me</a>
-</div></div>
+<form action="mailto:palacexofxtwilight@example.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+</div>
   
 <div class="topnav"><div style="text-align: center;">
   <a href="https://indigoeyestudios.github.io/home.html">Home</a>
